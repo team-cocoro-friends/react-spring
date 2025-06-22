@@ -1,5 +1,8 @@
 package com.example.todo.dto;
 
+import lombok.Getter;
+
+@Getter
 public class TodoPostRequest {
 
     private String text;
@@ -8,9 +11,5 @@ public class TodoPostRequest {
 
     public TodoPostRequest(String text) {
         this.text = text;
-    }
-
-    public String getText() {
-        return text;
     }
 }

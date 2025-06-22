@@ -1,5 +1,8 @@
 package com.example.todo.dto;
 
+import lombok.Getter;
+
+@Getter
 public class CsrfTokenResponse {
 
     private final String csrfTokenHeaderName;
@@ -8,13 +11,5 @@ public class CsrfTokenResponse {
     public CsrfTokenResponse(String csrfTokenHeaderName, String csrfTokenValue) {
         this.csrfTokenHeaderName = csrfTokenHeaderName;
         this.csrfTokenValue = csrfTokenValue;
-    }
-
-    public String getCsrfTokenHeaderName() {
-        return csrfTokenHeaderName;
-    }
-
-    public String getCsrfTokenValue() {
-        return csrfTokenValue;
     }
 }
